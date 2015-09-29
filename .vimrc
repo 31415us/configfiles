@@ -277,3 +277,5 @@ inoremap <expr> )  strpart(getline('.'), col('.')-1, 1) == ")" ? "\<Right>" : ")
 inoremap "      <c-v>"<c-v>"<Left>
 
 let g:ConqueTerm_InsertOnEnter = 1
+
+let g:syntastic_cpp_compiler_options = '-std=c++11'
