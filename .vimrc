@@ -9,9 +9,18 @@ if v:progname =~? "evim"
   finish
 endif
 
-"setup pathogen package management"
-call pathogen#infect()
-call pathogen#helptags()
+" vim plug plugins
+call plug#begin('~/.vim/pugged')
+
+Plug 'elmcast/elm-vim'
+Plug 'OmniSharp/omnisharp-vim'
+Plug 'vim-syntastic/syntastic'
+Plug 'guns/vim-clojure-static'
+Plug 'guns/vim-clojure-highlight'
+Plug 'octol/vim-cpp-enhanced-highlight'
+Plug 'tpope/vim-dispatch'
+
+call plug#end()
 
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
@@ -54,7 +63,8 @@ if &t_Co > 2 || has("gui_running")
 endif
 
 " set colorscheme
-colorscheme peachpuff 
+" colorscheme peachpuff 
+colorscheme dracula
 " highlight column 80
 set colorcolumn=80
 
