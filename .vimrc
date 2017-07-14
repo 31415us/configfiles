@@ -19,6 +19,7 @@ Plug 'guns/vim-clojure-static'
 Plug 'guns/vim-clojure-highlight'
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'tpope/vim-dispatch'
+Plug 'jdonaldson/vaxe'
 
 call plug#end()
 
