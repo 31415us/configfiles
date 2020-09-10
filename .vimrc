@@ -10,18 +10,7 @@ if v:progname =~? "evim"
 endif
 
 " vim plug plugins
-call plug#begin('~/.vim/pugged')
-
-Plug 'elmcast/elm-vim'
-Plug 'OmniSharp/omnisharp-vim'
-Plug 'vim-syntastic/syntastic'
-Plug 'guns/vim-clojure-static'
-Plug 'guns/vim-clojure-highlight'
-Plug 'octol/vim-cpp-enhanced-highlight'
-Plug 'tpope/vim-dispatch'
-Plug 'jdonaldson/vaxe'
-
-call plug#end()
+packadd! dracula
 
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
